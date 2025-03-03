@@ -12,31 +12,31 @@
 
     .nav-link, .form-control, .ms-2 i 
     {
-        color: black;
+        color: $text-color-bk;
         
         &:hover
         {
-           color: #FFD700;  
+           color: $secondary-color;  
         }
 
     }
 
     .navbar-brand
     {
-        font-family: 'Playfaur Display',serif;
+        font-family: $font-tittle;
         font-size: 2rem;
         font-weight: bold;    
         text-transform: uppercase;
 
         &::first-letter
         {
-            color: #8b4513;
+            color: $primary-color;
             font-size: 2.5rem;
         }    
 
         &:hover
         {
-            color: #FFD700; 
+            color: $secondary-color; 
         }
     }
 
@@ -78,20 +78,20 @@
 
 .navbar-brand
 {
-    font-family: 'Playfaur Display',serif;
+    font-family: $font-tittle;
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: $text-color-wh;
     text-transform: uppercase;
 
     &:hover
     {
-        color: #FFD700; 
+        color: $secondary-color; 
     }
 
     &::first-letter
     {
-        color: #8b4513;
+        color: $primary-color;
         font-size: 2.5rem;
     }
 }
@@ -102,13 +102,13 @@
     {
         .nav-link
         {
-            color: white;
+            color: $text-color-wh;
             font-size: 1.1rem;
         }
 
         .nav-link:hover
         {
-            color: #FFD700; 
+            color: $secondary-color; 
         }
     }
     
@@ -118,19 +118,19 @@
 .ms-2
 {
     i{
-        color: white;
+        color: $text-color-wh;
     }
 
     i:hover 
     {
-        color: #FFD700;
+        color: $secondary-color;
     }
 }
 
 .form-control 
 {
     background-color: rgba(255,255,255,0.2);
-    color: white;
+    color: $text-color-wh;
     border: none;
 
     &::placeholder 

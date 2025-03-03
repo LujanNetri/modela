@@ -1,0 +1,31 @@
+//Mixin
+@mixin flex-center($justify,$align)
+{
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button-style
+{
+    background-color: $primary-color;
+    font-family: $font-main;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover
+    {
+        background-color: $primary-color;
+        transform: scale(1.05);
+    }
+}
+
+@mixin h1 
+{
+  font-family: $font-tittle;
+  font-size: 60px;
+  font-weight: bold;
+}

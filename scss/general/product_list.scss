@@ -1,6 +1,6 @@
 /*Men.html*/
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $font-main;
   margin: 0;
   padding: 0;
 }
@@ -13,15 +13,12 @@ a {
 main 
 {
     
-    h1 
-    { 
-        font-family: 'Playfair Display',serif;
-        font-size: 60px;
-        font-weight: bold;
+    h1
+    {
+        @include h1;
         margin-top: 4rem;
-        text-align: bottom;
+        text-align: bottom;  
     }
-
     padding: 40px 20px 20px;
 
     .product_list
@@ -30,10 +27,8 @@ main
 
         .product_container
         {
-            display: flex;
+            @include flex-center(center,none);
             width: 80%;
-            justify-content: center;
-
 
             .product_items
             {
@@ -85,7 +80,7 @@ main
             .accordion-button 
             {
                 font-weight: bold;
-                color:black;
+                color:$text-color-bk;
                 background-color: #E8E1DE;
                 
             }

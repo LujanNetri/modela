@@ -10,27 +10,23 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     min-height: 75vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @include flex-center(start,center);
     text-align: center;
-    color: white;
+    color: $text-color-wh;
     padding: 20px;
 
     .cover-text {
 
         p 
         {
-            font-family: 'Lato',sans-serif;
+            font-family: $font-main;
             font-size: 18px;
             font-weight: 400;
         }
   
         h1
         {
-            font-family: 'Playfair Display',serif;
-            font-size: 60px;
-            font-weight: 700;
+            @include h1;
         }    
     }   
 }
@@ -45,13 +41,11 @@ main{
     
     .formal_woman, .formal_men, .casual_style 
     {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        @include flex-center(flex-start,center);
         padding: 30px;
-        color: white;
-        font-family: 'Playfair Display',serif;
-        font-size: 30px;
+        color: $text-color-wh;
+        font-family: $font-tittle;
+        font-size: 25px;
         font-weight: bold;
         text-align: center;
         background-size: cover;
@@ -86,16 +80,13 @@ main{
 
     h1
     {
-        font-family: 'Playfair Display',serif;
-        font-size: 60px;
-        font-weight: bold;
+        @include h1;
         margin-bottom: 30px;
     }    
 
     .products_cover3
     {
-        display: flex;
-        justify-content: center;
+        @include flex-center(center,none);
         gap: 20px;
         flex-wrap: wrap;
 
@@ -115,14 +106,14 @@ main{
 
         h3
         {    
-            font-family: 'Playfair Display',serif;
+            font-family: $font-tittle;
             font-size: 30px;
             margin: 10px 0px;
         }
 
         p 
         {
-            font-family: 'lato', sans-serif;
+            font-family: $font-main;
             font-size: 16px;
             color: gray;
         }
@@ -130,36 +121,19 @@ main{
 
         .button_see_more
         {
-            display: flex;
-            justify-content: flex-start;
+            @include flex-center(flex-start,none);
             margin-top: 20px;
             margin-left: 80px;
 
             button 
             {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center(center,center);
+                @include button-style;
                 gap: 10px;
-                box-sizing: border-box;
-                background-color: #8B4513;
-                font-family: 'lato', sans-serif;        
-                padding: 10px 30px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                margin-top: 10px;
-
-                &:hover
-                {
-                    background-color: #a36132;
-                    transform: scale(1.05)
-                } 
-
-
+                box-sizing: border-box;  
                 p 
                 {
-                    color: white;
+                    color: $text-color-wh;
                     font-size: 20px;
                     margin: 0;
                 }
@@ -167,7 +141,7 @@ main{
                 i
                 {
                     font-size: 20px;
-                    color: white;
+                    color: $text-color-wh;
                     transition: transform 0.3s ease;
                 }
 
@@ -187,16 +161,13 @@ main{
 
     h1
     {
-        font-family: 'Playfair Display',serif;
-        font-size: 60px;
-        font-weight: bold;
+        @include h1;
         margin-bottom: 30px;
     }    
 
     .products_cover4
     {
-        display: flex;
-        justify-content: center;
+        @include flex-center(center,none);
         gap: 20px;
         flex-wrap: wrap;
 
@@ -216,14 +187,14 @@ main{
 
         h3
         {    
-            font-family: 'Playfair Display',serif;
+            font-family: $font-tittle;
             font-size: 30px;
             margin: 10px 0px;
         }
 
         p 
         {
-            font-family: 'lato', sans-serif;
+            font-family: $font-main;
             font-size: 16px;
             color: gray;
         }
@@ -231,36 +202,19 @@ main{
 
         .button_see_more
         {
-            display: flex;
-            justify-content: flex-start;
+            @include flex-center(flex-start,none);
             margin-top: 20px;
             margin-left: 80px;
 
             button 
             {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center(center,center);
+                @include button-style;
                 gap: 10px;
-                box-sizing: border-box;
-                background-color: #8B4513;
-                font-family: 'lato', sans-serif;        
-                padding: 10px 30px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                margin-top: 10px;
-
-                &:hover
-                {
-                    background-color: #a36132;
-                    transform: scale(1.05)
-                } 
-
-
+                box-sizing: border-box;  
                 p 
                 {
-                    color: white;
+                    color: $text-color-wh;
                     font-size: 20px;
                     margin: 0;
                 }
@@ -268,7 +222,7 @@ main{
                 i
                 {
                     font-size: 20px;
-                    color: white;
+                    color: $text-color-wh;
                     transition: transform 0.3s ease;
                 }
 
@@ -289,16 +243,13 @@ main{
 
     h1 
     {
-        font-family: 'Playfair Display',serif;
-        font-size: 60px;
-        font-weight: bold;
+        @include h1;
         margin-bottom: 30px;
     }
 
     .testimonial-container 
     {
-        display: flex;
-        justify-content: center;
+        @include flex-center(center,none);
         gap: 20px;
         padding: 20px;
 
@@ -340,7 +291,7 @@ main{
     .carousel-control-prev-icon,
     .carousel-control-next-icon 
     {
-        background-color: #8B4513;
+        background-color: $primary-color;
         padding: 20px 20px;
         border-radius: 50%;
         opacity: 1;

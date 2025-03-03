@@ -10,9 +10,7 @@
 
         h1 
         {
-            font-family: 'Playfair Display',serif;
-            font-size: 60px;
-            font-weight: bold;
+            @include h1;
             margin-bottom: 30px;            
         }
 
@@ -24,14 +22,13 @@
 
         .info
         {
-            display: flex;
-            justify-content: space-between;
+            @include flex-center(space-between,none);
             gap: 20px;
 
             .info_box
             {
                 flex: 1;
-                background: white;
+                background: $text-color-wh;
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0,0,0,0.6);

@@ -16,13 +16,13 @@
   color: #FFD700;
 }
 .navbar .navbar-brand {
-  font-family: "Playfaur Display", serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 .navbar .navbar-brand::first-letter {
-  color: #8b4513;
+  color: #8B4513;
   font-size: 2.5rem;
 }
 .navbar .navbar-brand:hover {
@@ -52,7 +52,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 .home .navbar-brand {
-  font-family: "Playfaur Display", serif;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: bold;
   color: white;
@@ -62,7 +62,7 @@
   color: #FFD700;
 }
 .home .navbar-brand::first-letter {
-  color: #8b4513;
+  color: #8B4513;
   font-size: 2.5rem;
 }
 .home .navbar-nav .nav-item .nav-link {
@@ -162,7 +162,7 @@ main {
 .cover1 .cover-text h1 {
   font-family: "Playfair Display", serif;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .cover2 {
@@ -174,12 +174,12 @@ main {
 }
 .cover2 .formal_woman, .cover2 .formal_men, .cover2 .casual_style {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   padding: 30px;
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   background-size: cover;
@@ -213,6 +213,7 @@ main {
 .cover3 .products_cover3 {
   display: flex;
   justify-content: center;
+  align-items: none;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -232,32 +233,33 @@ main {
   margin: 10px 0px;
 }
 .cover3 .products_cover3 p {
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: gray;
 }
 .cover3 .button_see_more {
   display: flex;
   justify-content: flex-start;
+  align-items: none;
   margin-top: 20px;
   margin-left: 80px;
 }
 .cover3 .button_see_more button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  box-sizing: border-box;
+  align-items: center;
   background-color: #8B4513;
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  gap: 10px;
+  box-sizing: border-box;
 }
 .cover3 .button_see_more button:hover {
-  background-color: #a36132;
+  background-color: #8B4513;
   transform: scale(1.05);
 }
 .cover3 .button_see_more button p {
@@ -287,6 +289,7 @@ main {
 .cover4 .products_cover4 {
   display: flex;
   justify-content: center;
+  align-items: none;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -306,32 +309,33 @@ main {
   margin: 10px 0px;
 }
 .cover4 .products_cover4 p {
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: gray;
 }
 .cover4 .button_see_more {
   display: flex;
   justify-content: flex-start;
+  align-items: none;
   margin-top: 20px;
   margin-left: 80px;
 }
 .cover4 .button_see_more button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  box-sizing: border-box;
+  align-items: center;
   background-color: #8B4513;
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  gap: 10px;
+  box-sizing: border-box;
 }
 .cover4 .button_see_more button:hover {
-  background-color: #a36132;
+  background-color: #8B4513;
   transform: scale(1.05);
 }
 .cover4 .button_see_more button p {
@@ -362,6 +366,7 @@ main {
 .cover5 .testimonial-container {
   display: flex;
   justify-content: center;
+  align-items: none;
   gap: 20px;
   padding: 20px;
 }
@@ -424,8 +429,9 @@ main .product_list {
 }
 main .product_list .product_container {
   display: flex;
-  width: 80%;
   justify-content: center;
+  align-items: none;
+  width: 80%;
 }
 main .product_list .product_container .product_items {
   display: grid;
@@ -489,6 +495,7 @@ main .product_list .search .accordion-body {
 .about_us .container .info {
   display: flex;
   justify-content: space-between;
+  align-items: none;
   gap: 20px;
 }
 .about_us .container .info .info_box {

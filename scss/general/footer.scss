@@ -1,10 +1,10 @@
 /*FOOTER*/
 footer 
 {
-    background-color: #8B4513;
-    color: white;
+    background-color: $primary-color;
+    color: $text-color-wh;
     padding: 40px 20px;
-    font-family: 'Poppins',sans-serif;
+    font-family: $font-footer;
 
     .footer_container 
     {
@@ -24,7 +24,7 @@ footer
 
         h1 
         {
-            font-family: 'Playfair Display',serif;
+            font-family: $font-tittle;
             font-size: 50px;
             margin-bottom: 30px;
         }
@@ -39,12 +39,12 @@ footer
         .footer_column p a 
         {
             text-decoration: none;
-            color: white;
+            color: $text-color-wh;
         }
 
         .footer_column p a:hover 
         {
-            color: #FFD700;
+            color: $secondary-color;
         }
 
     }
