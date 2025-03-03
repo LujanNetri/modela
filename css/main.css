@@ -476,6 +476,12 @@ main .product_list .search .accordion-body {
   text-align: center;
   padding: 50px 0;
 }
+.about_us .container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 .about_us .container .lead {
   font-size: 1.2rem;
   margin-bottom: 40px;
@@ -490,11 +496,7 @@ main .product_list .search .accordion-body {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.about_us .container .info .info_box img {
-  width: 100%;
-  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .about_us .container .info .info_box h4 {
   margin-top: 15px;
@@ -503,9 +505,97 @@ main .product_list .search .accordion-body {
 .about_us .container .info .info_box p {
   font-size: 1rem;
 }
+.about_us .container .info .info_box:hover {
+  box-shadow: rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
 .about_us h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+/*Media Queries para celulares*/
+@media screen and (max-width: 480px) {
+  /*index.html*/
+  .cover1 .cover-text h1 {
+    font-size: 28px;
+  }
+  .cover2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cover2 .formal_woman h1, .cover2 .formal_men h1, .cover2 .casual_style h1 {
+    font-size: 2rem;
+  }
+  .cover2 .casual_style {
+    order: 2;
+    min-height: 50vh;
+  }
+  .cover3 h1 {
+    font-size: 36px;
+  }
+  .cover4 h1 {
+    font-size: 36px;
+  }
+  footer .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Lista de productos*/
+  main .product_list {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .product_list .search {
+    width: 100%;
+  }
+  main .product_list .product_container {
+    width: 100%;
+  }
+  main .product_list .product_container .product_items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  /*About.html*/
+  .about_us .container {
+    width: 95%;
+  }
+  .about_us .container h2 {
+    font-size: 2rem;
+  }
+  .about_us .container .lead {
+    font-size: 1rem;
+  }
+  .about_us .container .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_us .container .info .info_box {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/*Media Queries para Tablets*/
+@media (min-width: 480px) and (max-width: 1024px) {
+  /*Product List*/
+  main .product_list {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .product_list .search {
+    width: 80%;
+  }
+  main .product_list .product_container {
+    width: 90%;
+  }
+  main .product_list .product_container .product_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*Footer*/
+  footer {
+    min-height: 45vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
