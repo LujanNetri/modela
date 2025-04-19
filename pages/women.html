@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    
+     <!-- Link al Javascript -->
+      <script defer src="../js/product_list.js"></script>
+    
     <!-- Link a bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,11 +15,11 @@
     <!-- Link a Google Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Link al css -->
+     <!-- Link al css -->
     <link rel="stylesheet" href="../css/main.css" />
     <title>Women Product</title>
   </head>
-  <body>
+  <body data-seccion="women">
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg bg-transparent">
@@ -45,8 +49,8 @@
           </ul>
           <form class="d-flex align-items-center" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <a href="#" class="ms-2">
-              <i class="fas fa-shopping-cart fs-4"></i> 
+            <a href="carrito.html" class="ms-2">
+              <i class="fas fa-shopping-cart fs-4" id="carrito-contador"></i> 
             </a>
           </form>
         </div>
@@ -59,7 +63,7 @@
       <h1>ALL PRODUCTS</h1>
       <div class="product_list">
 
-        <div class="search">
+        <!-- <div class="search">
           <div class="accordion" id="accordionFilters">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingCategory">
@@ -116,56 +120,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="product_container">
-          <div class="product_items">
-          
-            <div class="product">
-              <img src="../imagenes/women/women_product_1.jpg" alt="">
-              <p class="category">Hoddie</p>
-              <p class="product_name">Blue Hoddie</p>
-              <p class="price">80.000</p>
-            </div>
-
-            <div class="product">
-              <img src="../imagenes/women/women_product_2.jpg" alt="">
-              <p class="category">Suits</p>
-              <p class="product_name">Black Suit</p>
-              <p class="price">120.000</p>
-            </div>
-
-            <div class="product">
-              <img src="../imagenes/women/women_product_3.jpg" alt="">
-              <p class="category">Jeans</p>
-              <p class="product_name">Blue Jeans</p>
-              <p class="price">200.000</p>
-            </div>
-
-            <div class="product">
-              <img src="../imagenes/women/women_product_4.jpg" alt="">
-              <p class="category">T-shirts</p>
-              <p class="product_name">Black T-shirts</p>
-              <p class="price">800.000</p>
-            </div>
-
-            <div class="product">
-              <img src="../imagenes/women/women_product_5.jpg" alt="">
-              <p class="category">Sweaters</p>
-              <p class="product_name">Black Sweaters</p>
-              <p class="price">350.000</p>
-            </div>
-
-            <div class="product">
-              <img src="../imagenes/women/women_product_6.jpg" alt="">
-              <p class="category">Dress</p>
-              <p class="product_name">Black Dress</p>
-              <p class="price">200.000</p>
-            </div>
-          </div>
-        </div>
-
-        </div>
+        <div id="product_container"></div>
       </div>
     </main>
 
