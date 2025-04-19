@@ -610,7 +610,8 @@ main .product_list .search .accordion-body {
   font-size: 0.95rem;
 }
 .carrito-contenedor h2 {
-  flex: 1;
+  height: 5rem;
+  margin: 10px 10px;
   font-size: 1.5rem;
   padding: 1rem;
   background-color: #eee;
