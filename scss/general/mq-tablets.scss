@@ -14,16 +14,18 @@
                 width: 80%;
             }
 
-            .product_container
+            #product_container
             {
-                width: 90%;
-
-                .product_items
-                {
-                    grid-template-columns: repeat(2,1fr);
-                }
+                width: 90%;     
+                grid-template-columns: repeat(2,1fr);
             }
         }
+    }
+
+    .carrito-contenedor
+    {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 
     /*Footer*/

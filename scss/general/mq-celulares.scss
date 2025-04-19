@@ -13,28 +13,6 @@
         }
     }
 
-    .cover2 
-    {
-        display: grid;
-        grid-template-columns: 1fr;
-
-         .formal_woman, .formal_men, .casual_style 
-         {
-            h1 
-            {
-                font-size: 2rem;
-            }
-         }
-
-        .casual_style 
-        {
-            order: 2;
-            min-height: 50vh;
-
-        }
-
-    }
-
     .cover3 
     {
         h1 
@@ -74,16 +52,13 @@
                     width: 100%;
                 }
 
-                .product_container
+                #product_container
                 {
                     width: 100%; 
-
-                    .product_items
-                    {
-                        display: grid;
-                        grid-template-columns: repeat(1,1fr);
-                        width: 100%;
-                    }
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    width: 100%;
+                    
                 }
             }
 
@@ -118,4 +93,34 @@
       }
     }
   }
+
+  /*carrito.html*/
+  .carrito-producto 
+  {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img.carrito-imagen
+    {
+        width: 100px;
+    }
+
+    .producto-info 
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .producto-detalle 
+    {
+        flex-direction: column;
+        gap: 10px;
+     }
+
+    h2{
+        font-size: 1.3rem;
+      }
+  }
+
 }

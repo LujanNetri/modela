@@ -16,35 +16,22 @@ function muestroCarrito() {
     const productoEnHTML = document.createElement("div");
     productoEnHTML.classList.add("carrito-producto");
 
-    productoEnHTML.innerHTML = `<img src =${producto.imagen} alt="${
-      producto.nombre
-    }" class="carrito-imagen"</>
-                                    <div class = "producto-info">
-                                        <div class = "producto-titulo">
-                                            <h3>${producto.nombre}</h3>    
-                                            <p class="categoria">${
-                                              producto.categoria
-                                            }</p>
-                                        </div>
-                                        <div class = "producto-detalle">
-                                            <div class = "cantidad">
-                                                <button class ="sumar" data-id="${
-                                                  producto.id
-                                                }">+</button>
-                                                <p>${producto.cantidad}</p>
-                                                <button class = "restar" data-id="${
-                                                  producto.id
-                                                }">-</button>
-                                            </div>
-                                            <p class = "precio">Price: $${
-                                              producto.precio
-                                            }</p>
-                                            <p class = "subtotal">Subtotal: $${
-                                              producto.precio *
-                                              producto.cantidad
-                                            }</p>
-                                        </div>
+    productoEnHTML.innerHTML = `<img src =${producto.imagen} alt="${producto.nombre}" class="carrito-imagen"</>
+                                <div class = "producto-info">
+                                  <div class = "producto-titulo">
+                                    <h3>${producto.nombre}</h3>    
+                                    <p class="categoria">${producto.categoria}</p>
+                                  </div>
+                                  <div class = "producto-detalle">
+                                    <div class = "cantidad">
+                                      <button class ="sumar" data-id="${ producto.id}">+</button>
+                                      <p>${producto.cantidad}</p>
+                                      <button class = "restar" data-id="${producto.id}">-</button>
                                     </div>
+                                    <p class = "precio">Price: $${producto.precio}</p>
+                                    <p class = "subtotal">Subtotal: $${producto.precio*producto.cantidad}</p>
+                                  </div>
+                                </div>
                                 `;
 
     contenedor.appendChild(productoEnHTML);
