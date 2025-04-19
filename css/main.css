@@ -637,7 +637,7 @@ main .product_list .search .accordion-body {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.carrito-contenedor .carrito-resumen #vaciar-carrito {
+.carrito-contenedor .carrito-resumen #vaciar-carrito, .carrito-contenedor .carrito-resumen .checkout-prodcuto {
   margin-top: 1rem;
   height: 4rem;
   padding: 0.5rem 0.5rem;
@@ -649,7 +649,7 @@ main .product_list .search .accordion-body {
   font-size: 1rem;
   font-weight: bold;
 }
-.carrito-contenedor .carrito-resumen #vaciar-carrito:hover {
+.carrito-contenedor .carrito-resumen #vaciar-carrito:hover, .carrito-contenedor .carrito-resumen .checkout-prodcuto:hover {
   background-color: #FFD700;
   color: white;
 }

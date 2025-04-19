@@ -56,7 +56,8 @@ function muestroCarrito() {
   const totalEnHTML = document.createElement("h2");
   totalEnHTML.innerHTML = `<div class="carrito-resumen">
                               <h2>Total to pay: $${total}</h2>
-                              <button id = "vaciar-carrito">Empty cart</button>                       
+                              <button id = "vaciar-carrito">Empty cart</button> 
+                              <a button class ="checkout-prodcuto" href="../pages/checkout.html"> Checkout</button>                       
                             </div>
                               `;
   contenedor.appendChild(totalEnHTML);
