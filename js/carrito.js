@@ -54,9 +54,11 @@ function muestroCarrito() {
   });
 
   const totalEnHTML = document.createElement("h2");
-  totalEnHTML.innerHTML = `<h2>Total to pay: $${total}</h2>
-                          <button id = "vaciar-carrito">Empty cart</button>                       
-  `;
+  totalEnHTML.innerHTML = `<div class="carrito-resumen">
+                              <h2>Total to pay: $${total}</h2>
+                              <button id = "vaciar-carrito">Empty cart</button>                       
+                            </div>
+                              `;
   contenedor.appendChild(totalEnHTML);
 
   main.appendChild(contenedor);
