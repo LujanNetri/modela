@@ -5,7 +5,7 @@ function muestroCarrito() {
   main.innerHTML = "";
 
   if (carrito.length === 0)
-    main.innerHTML = `<p id="texto-vacio">Your cart is empty:</p>`;
+    main.innerHTML = `<p id="texto-vacio">Your cart is empty</p>`;
 
   const contenedor = document.createElement("div");
   contenedor.classList.add("carrito-contenedor");
