@@ -2,12 +2,16 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
 const form = document.getElementById("form_checkout")
 const resumen = document.getElementById("resumen_compra")
+const mensajeError = document.getElementById("mensaje_error");
 
 form.onsubmit = function (evento)
 {
     evento.preventDefault()
 
-    const nombre = document.getElementById("nombre").value 
+    mensajeError.textContent = ""
+
+    const nombre = document.getElementById("nombre").value
+    const apellido = document.getElementById("apellido").value 
     const email = document.getElementById("email").value
     const direccion = document.getElementById("direccion").value
 
@@ -19,16 +23,11 @@ form.onsubmit = function (evento)
         metodoPago ="Credit Card"
     else if (metodoPagoDebito.checked)
         metodoPago = "Debit Card"
-    else
-    {
-        alert("Please select a payment method.");
-        return
-    } 
         
         
     if(carrito.length === 0)
     {
-        alert("Your carts is empty")
+       mensajeError.textContent = "Your cart is empty"
         return
     }
 
@@ -42,7 +41,7 @@ form.onsubmit = function (evento)
     });
 
     resumen.innerHTML = `<h2> Purchase Summary</h2>
-                         <p>Name: ${nombre}</p>
+                         <p>Name: ${nombre} ${apellido}</p>
                          <p>Email: ${email}</p>
                          <p>Adress: ${direccion}</p>
                          <p>Payment Method: ${metodoPago}</p>
