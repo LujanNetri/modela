@@ -27,7 +27,8 @@ form.onsubmit = function (evento)
         
     if(carrito.length === 0)
     {
-       mensajeError.textContent = "Your cart is empty"
+        mensajeError.classList.add("mostrar");
+        mensajeError.textContent = "Your cart is empty"
         return
     }
 
@@ -48,7 +49,7 @@ form.onsubmit = function (evento)
                          <h3>Products:</h3>   
                          <ul>${listaProductos}</ul>
                          <h3>Total: $${total}</h3>
-                         <p>Thank you for your purchase!<p>                 
+                         <p id="texto-compra-final">Thank you for your purchase!<p>                 
     `
     carrito = []
     localStorage.setItem("carrito",JSON.stringify(carrito))

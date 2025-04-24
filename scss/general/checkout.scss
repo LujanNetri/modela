@@ -1,1 +1,138 @@
 /*Checkout.html*/
+.checkout_formulario
+{
+    padding: 3rem 1rem;
+
+    h1 
+    {
+        font-family: 'Playfair Display', serif;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 3rem
+    }
+
+    #form_checkout
+    {
+        max-width: 600px;
+        margin: 0 auto;
+    
+        .form_input
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            font-family: $font-main;
+            font-size: 1rem;
+            font-weight: 600px;
+            margin-bottom: 0.5rem;
+            color: #333;
+            
+        
+
+            input[type="text"],
+            input[type="email"]
+            {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                
+                &:focus
+                {
+                    border-color: #000;
+                    outline: none;
+                }
+            }
+        }
+
+      p 
+      {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      label[for="credito"],
+      label[for="debito"]
+      {
+        display: inline-block;
+        margin-right: 1.5rem;
+        font-weight: 400;
+      }
+      
+      input[type="radio"]
+      {
+        margin-right: 0.5rem;
+      }
+
+        button[type="submit"] 
+        {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+
+            &:hover 
+            {
+                background-color: darken($primary-color, 10%);       
+            }
+        }
+    }
+
+    #mensaje_error
+    {
+        max-width: 600px;
+        margin: 0 auto 1.5rem auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: #f8d7da;
+        color: #842029;
+        border: 1px solid #f5c2c7;
+        font-weight: bold;
+        display: none;
+
+        &.mostrar 
+        {
+            display: block;
+        }
+    }
+}
+
+.checkout_resumen 
+{
+    max-width: 800px;
+    margin: 3rem auto;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+     padding: 2rem;
+
+    h2 
+    {
+        font-family: $font-tittle;
+        font-size: 1.75rem;
+    }
+
+    ul 
+    {
+        padding-left: 1rem;
+
+        li 
+        {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    #texto-compra-final
+    {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+
+}
