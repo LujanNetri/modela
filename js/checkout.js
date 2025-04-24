@@ -41,6 +41,7 @@ form.onsubmit = function (evento)
         listaProductos += `<li>${producto.nombre} x${producto.cantidad} - $${subtotal}</li>` 
     });
 
+    resumen.classList.add("mostrar");
     resumen.innerHTML = `<h2> Purchase Summary</h2>
                          <p>Name: ${nombre} ${apellido}</p>
                          <p>Email: ${email}</p>

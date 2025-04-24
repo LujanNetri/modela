@@ -742,6 +742,10 @@ main .product_list .search .accordion-body {
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  display: none;
+}
+.checkout_resumen.mostrar {
+  display: block;
 }
 .checkout_resumen h2 {
   font-family: "Playfair Display", serif;
