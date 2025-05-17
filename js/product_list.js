@@ -8,38 +8,41 @@ function imprimoProductosHTML(productos) {
   productos.forEach(function(producto){
     const card = document.createElement("div");
     card.classList.add("card");
-
     card.innerHTML = `
                         <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-img" />
                         <p class="category">${producto.categoria}</p>
                         <h3 class="product_name">${producto.nombre}</h3>
                         <p class="price">$${producto.precio}</p>
-                        <button id="btn-${producto.id}" class="btn-comprar">Add to cart</button>
-                        `;
+                        <button id="btn-${producto.id}" class="btn-comprar">Add to cart</button>`;
     contenedor.appendChild(card);
-
     const boton = document.getElementById(`btn-${producto.id}`);
     boton.addEventListener("click", () => agregaAlCarrito(producto));
   });
 }
 
 let carrito = [];
-try {
+try 
+{
   const datos = localStorage.getItem("carrito");
 
   if (datos != null) 
     carrito = JSON.parse(datos);
-} catch (error) {
+} catch (error) 
+{
   console.error("Error al recuperar la informacion del carrito", error);
   carrito = [];
 }
 
-function agregaAlCarrito(producto) {
+function agregaAlCarrito(producto) 
+{
   const productoEnCarrito = carrito.find((productoABuscar) => productoABuscar.id === producto.id);
 
-  if (productoEnCarrito) productoEnCarrito.cantidad++;
-  else {
-    let productoNuevo = {
+  if (productoEnCarrito) 
+    productoEnCarrito.cantidad++;
+  else 
+  {
+    let productoNuevo = 
+    {
       id: producto.id,
       nombre: producto.nombre,
       categoria: producto.categoria,
@@ -66,7 +69,8 @@ function agregaAlCarrito(producto) {
   }).showToast();
 }
 
-function actualizoContadorCarrito() {
+function actualizoContadorCarrito() 
+{
   const contador = document.getElementById("carrito-contador");
   let total = 0;
 

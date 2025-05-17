@@ -83,23 +83,6 @@
         }
     }
 
-    #mensaje_error
-    {
-        max-width: 600px;
-        margin: 0 auto 1.5rem auto;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background-color: #f8d7da;
-        color: #842029;
-        border: 1px solid #f5c2c7;
-        font-weight: bold;
-        display: none;
-
-        &.mostrar 
-        {
-            display: block;
-        }
-    }
 }
 
 .checkout_resumen 

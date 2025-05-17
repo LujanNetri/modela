@@ -720,17 +720,6 @@ main .product_list .search .accordion-body {
 .checkout_formulario #form_checkout button[type=submit]:hover {
   background-color: rgb(94.1329113924, 46.7278481013, 12.8670886076);
 }
-.checkout_formulario #mensaje_error {
-  max-width: 600px;
-  margin: 0 auto 1.5rem auto;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: #f8d7da;
-  color: #842029;
-  border: 1px solid #f5c2c7;
-  font-weight: bold;
-  display: none;
-}
 .checkout_formulario #mensaje_error.mostrar {
   display: block;
 }
