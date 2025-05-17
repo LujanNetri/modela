@@ -55,7 +55,7 @@ function agregaAlCarrito(producto) {
 
   Toastify({
     text: `"${producto.nombre}" added to cart!`,
-    duration: 3000,
+    duration: 1000,
     gravity: "top",
     position: "right",
     close: true,
