@@ -18,12 +18,10 @@
 4. Desde el carrito podés:
    - Eliminar productos individualmente.
    - Vaciar el carrito completamente.
-   - Total a pagar   
+   - Ver el total a pagar   
    - Iniciar el proceso de compra con el botón **"Checkout"**.
 
-
 ## Checkout
-
 En la página de checkout, deberás completar un formulario con la siguiente información:
 
 - Nombre
