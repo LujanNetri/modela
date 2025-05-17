@@ -6,9 +6,9 @@
 ## Secciones de la página
 
 - **Home**
-- **Mujer / Hombre / Niños**
+- **Men / Women / Kids**
 - **About Us**
-- **Carrito**
+- **Cart**
 
 ## ¿Cómo funciona?
 
