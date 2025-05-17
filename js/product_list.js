@@ -52,6 +52,18 @@ function agregaAlCarrito(producto) {
 
   localStorage.setItem("carrito", JSON.stringify(carrito));
   actualizoContadorCarrito();
+
+  Toastify({
+    text: `"${producto.nombre}" added to cart!`,
+    duration: 3000,
+    gravity: "top",
+    position: "right",
+    close: true,
+    style: {
+      background: "linear-gradient(to right,#8B4513,#8B4513)",
+      color: "#fff",
+    },
+  }).showToast();
 }
 
 function actualizoContadorCarrito() {
