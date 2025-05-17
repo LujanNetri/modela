@@ -5,7 +5,7 @@ function obtengoSeccionActual() {
 function imprimoProductosHTML(productos) {
   const contenedor = document.getElementById("product_container");
 
-  productos.forEach((producto) => {
+  productos.forEach(function(producto){
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -23,12 +23,19 @@ function imprimoProductosHTML(productos) {
   });
 }
 
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let carrito = [];
+try {
+  const datos = localStorage.getItem("carrito");
+
+  if (datos != null) 
+    carrito = JSON.parse(datos);
+} catch (error) {
+  console.error("Error al recuperar la informacion del carrito", error);
+  carrito = [];
+}
 
 function agregaAlCarrito(producto) {
-  const productoEnCarrito = carrito.find(
-    (productoABuscar) => productoABuscar.id === producto.id
-  );
+  const productoEnCarrito = carrito.find((productoABuscar) => productoABuscar.id === producto.id);
 
   if (productoEnCarrito) productoEnCarrito.cantidad++;
   else {
@@ -51,7 +58,9 @@ function actualizoContadorCarrito() {
   const contador = document.getElementById("carrito-contador");
   let total = 0;
 
-  for (const producto of carrito) total += producto.cantidad;
+  carrito.forEach(function(producto){
+    total+=producto.cantidad
+  })
 
   contador.innerText = total;
 }
@@ -63,6 +72,6 @@ fetch("../db/data.json")
     const productos = data[seccion] || [];
     imprimoProductosHTML(productos);
   })
-  .catch((err) => console.err("Error cargando productos:", error));
+.catch((err) => console.error("Error cargando productos:", err));
 
 actualizoContadorCarrito();

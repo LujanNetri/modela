@@ -1,4 +1,13 @@
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+let carrito = [];
+try {
+  const datos = localStorage.getItem("carrito");
+
+  if (datos != null) 
+    carrito = JSON.parse(datos);
+} catch (error) {
+  console.error("Error al recuperar la informacion del carrito", error);
+  carrito = [];
+}
 
 function muestroCarrito() {
   const main = document.querySelector("main");
@@ -12,7 +21,7 @@ function muestroCarrito() {
 
   let total = 0;
 
-  carrito.forEach((producto) => {
+  carrito.forEach(function (producto) {
     const productoEnHTML = document.createElement("div");
     productoEnHTML.classList.add("carrito-producto");
 
@@ -73,7 +82,7 @@ function agregobotones() {
   const botonEliminar = document.querySelectorAll(".eliminar-producto");
   const botonVaciar = document.querySelector("#vaciar-carrito");
 
-  botonSumar.forEach((boton) => {
+  botonSumar.forEach(function (boton) {
     boton.addEventListener("click", () => {
       const id = parseInt(boton.dataset.id);
       const producto = carrito.find(
@@ -87,7 +96,7 @@ function agregobotones() {
     });
   });
 
-  botonRestar.forEach((boton) => {
+  botonRestar.forEach(function (boton) {
     boton.addEventListener("click", () => {
       const id = parseInt(boton.dataset.id);
       const producto = carrito.find(
@@ -106,7 +115,7 @@ function agregobotones() {
     });
   });
 
-  botonEliminar.forEach((boton) => {
+  botonEliminar.forEach(function (boton) {
     boton.addEventListener("click", () => {
       const id = parseInt(boton.dataset.id);
       carrito = carrito.filter((productoAbuscar) => productoAbuscar.id !== id);
