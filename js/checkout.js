@@ -33,16 +33,6 @@ form.onsubmit = function (evento)
     metodoPago ="Credit Card"
   else if (metodoPagoDebito.checked)
     metodoPago = "Debit Card"
-        
-  if(carrito.length === 0)
-  {
-    Swal.fire({
-      title: "Your cart is empty!",
-      text: "Add products to continue.",
-      icon: "warning",
-      });
-    return
-  }
 
   Swal.fire({
     title: "Are you sure you want to complete the purchase?",

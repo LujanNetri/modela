@@ -536,6 +536,8 @@ main .product_list .search .accordion-body {
 #texto-vacio {
   margin-top: 5rem;
   display: flex;
+  flex: 1;
+  min-height: 45vh;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -719,9 +721,6 @@ main .product_list .search .accordion-body {
 }
 .checkout_formulario #form_checkout button[type=submit]:hover {
   background-color: rgb(94.1329113924, 46.7278481013, 12.8670886076);
-}
-.checkout_formulario #mensaje_error.mostrar {
-  display: block;
 }
 
 .checkout_resumen {
